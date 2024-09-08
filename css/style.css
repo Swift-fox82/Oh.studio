@@ -1,0 +1,76 @@
+.navbar {
+    background-color: rgba(232, 229, 228, 0.5);
+    backdrop-filter: blur(16px);
+    width: 15%;
+    padding: 8px 25px;
+    border-radius: 55px;
+}
+
+.navbar-brand {
+    font-size: 16px;
+}
+
+.active {
+    background-color: #fff;
+    border-radius: 55px;
+}
+
+.title-header {
+    font-size: 4em;
+}
+
+.title-details {
+    background-color: rgba(232, 229, 228, 0.5);
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        border-radius: 45px;
+        padding: 25px 0;
+    }
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container img {
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+    filter: blur(16px);
+}
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 24px; 
+    color: black;
+    background-color: #fff; 
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .arrow {
+    opacity: 1;
+}
+
+
+.link-secondary {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.link-media {
+    margin-top: -2rem;
+}
